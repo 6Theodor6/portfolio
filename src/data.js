@@ -106,9 +106,9 @@ export const data = {
           'Board compacted to under 52×52 mm — bare PCB ≈ $2, full board ≈ $30–35',
         ],
         media: [
+          { type: 'image', src: '/media/stm32.png', caption: 'STM32 SoM board' },
           { type: 'image', src: '/media/som-ddr3l.jpg', caption: 'DDR3L delay tuning' },
           { type: 'image', src: '/media/som-bga-dogbone.jpg', caption: 'BGA dog-bone breakout' },
-          { type: 'image', src: '/media/som-spi-test.jpg', caption: 'SPI test pads' },
         ],
       },
       {
@@ -353,9 +353,9 @@ export const data = {
           'Deska pod 52×52 mm',
         ],
         media: [
+          { type: 'image', src: '/media/stm32.png', caption: 'Deska STM32 SoM' },
           { type: 'image', src: '/media/som-ddr3l.jpg', caption: 'Delay tuning DDR3L' },
           { type: 'image', src: '/media/som-bga-dogbone.jpg', caption: 'BGA dog-bone breakout' },
-          { type: 'image', src: '/media/som-spi-test.jpg', caption: 'SPI testovací pole' },
         ],
       },
       {
