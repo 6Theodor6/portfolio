@@ -189,15 +189,33 @@ export const data = {
         ],
       },
       {
-        title: 'Analog Projects & LiDAR',
+        title: 'Inductor & Capacitor Meter',
         tag: 'Analog',
         period: '2023 – 2025',
         summary:
-          'A collection of analog engineering projects including an LC tank meter and a modular LiDAR.',
+          'Analog device meter measuring inductance and capacitance based on the LC resonance circuit oscillation principle.',
         details: [
           'C-L meter based on the LC resonance circuit oscillation principle',
-          'Modular LiDAR development',
           'Precision analog design',
+        ],
+        media: [
+          { type: 'image', src: '/media/LC_Tank.png', caption: 'LC tank circuit' },
+          { type: 'video', src: '/media/LC_meter.MP4', caption: 'LC meter demo' },
+        ],
+      },
+      {
+        title: 'LIDAR',
+        tag: 'Analog',
+        status: 'current',
+        period: '2023 – 2025',
+        summary:
+          'Modular LIDAR development for distance sensing, currently in progress.',
+        details: [
+          'Modular LIDAR development',
+          'Precision analog design',
+        ],
+        media: [
+          { type: 'video', src: '/media/LIDAR.mov', caption: 'LIDAR demo' },
         ],
       },
       {
@@ -416,14 +434,33 @@ export const data = {
         ],
       },
       {
-        title: 'Analogové projekty & LiDAR',
+        title: 'Měřič indukčnosti a kapacity',
         tag: 'Analog',
         period: '2023 – 2025',
         summary:
-          'Soubor analogových projektů: LC tank metr a modular LiDAR.',
+          'Analogový přístroj na měření indukčnosti a kapacity na principu kmitání LC rezonančního obvodu.',
         details: [
           'Měřič C-L na principu LC rezonance',
-          'Modularní LiDAR',
+          'Precizní analogový návrh',
+        ],
+        media: [
+          { type: 'image', src: '/media/LC_Tank.png', caption: 'LC tank obvod' },
+          { type: 'video', src: '/media/LC_meter.MP4', caption: 'Demo LC metru' },
+        ],
+      },
+      {
+        title: 'LiDAR',
+        tag: 'Analog',
+        status: 'current',
+        period: '2023 – 2025',
+        summary:
+          'Vývoj modulárního LiDARu pro měření vzdálenosti, aktuálně ve vývoji.',
+        details: [
+          'Vývoj modulárního LiDARu',
+          'Precizní analogový návrh',
+        ],
+        media: [
+          { type: 'video', src: '/media/LIDAR.mov', caption: 'Demo LiDARu' },
         ],
       },
       {
