@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-16 flex flex-wrap gap-3">
-          {['KiCad', 'STM32', 'ESP32', 'DDR3L', 'SPI / I2C', 'Fusion 360'].map(
+          {['KiCad', 'STM32', 'ESP32', 'Arduino', 'DDR3L', 'SPI / I2C', 'Programming', 'Fusion 360'].map(
             (s) => (
               <span
                 key={s}
