@@ -131,7 +131,7 @@ export default function Projects() {
                         <img
                           src={m.src}
                           alt={m.caption || ''}
-                          className="w-full rounded-lg border border-slate-800 bg-black object-cover"
+                          className="h-56 w-full rounded-lg border border-slate-800 bg-black object-cover md:h-64"
                         />
                         {m.caption && (
                           <figcaption className="mt-1.5 text-xs text-slate-500">
