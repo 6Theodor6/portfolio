@@ -33,16 +33,16 @@ export default function Projects() {
           <SectionHeader eyebrow="04" title={t('projects_title')} subtitle={t('projects_subtitle')} />
         </Reveal>
 
-        {current.length > 0 && (
+        {completed.length > 0 && (
           <>
             <Reveal>
-              <h3 className="mb-4 flex items-center gap-3 font-mono text-sm uppercase tracking-wide text-amber-400">
-                <span className="h-px w-6 bg-amber-400/50" />
-                {t('projects_current')}
+              <h3 className="mb-4 flex items-center gap-3 font-mono text-sm uppercase tracking-wide text-slate-500">
+                <span className="h-px w-6 bg-slate-600/50" />
+                {t('projects_completed')}
               </h3>
             </Reveal>
             <div className="mb-12 grid gap-6 md:grid-cols-2">
-              {current.map((p, ci) => (
+              {completed.map((p, ci) => (
                 <ProjectCard
                   key={p.title}
                   p={p}
@@ -56,20 +56,20 @@ export default function Projects() {
           </>
         )}
 
-        {completed.length > 0 && (
+        {current.length > 0 && (
           <>
             <Reveal>
-              <h3 className="mb-4 flex items-center gap-3 font-mono text-sm uppercase tracking-wide text-slate-500">
-                <span className="h-px w-6 bg-slate-600/50" />
-                {t('projects_completed')}
+              <h3 className="mb-4 flex items-center gap-3 font-mono text-sm uppercase tracking-wide text-amber-400">
+                <span className="h-px w-6 bg-amber-400/50" />
+                {t('projects_current')}
               </h3>
             </Reveal>
             <div className="grid gap-6 md:grid-cols-2">
-              {completed.map((p, ci) => (
+              {current.map((p, ci) => (
                 <ProjectCard
                   key={p.title}
                   p={p}
-                  index={current.length + ci}
+                  index={completed.length + ci}
                   open={open}
                   setOpen={setOpen}
                   t={t}
