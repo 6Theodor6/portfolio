@@ -23,6 +23,7 @@ export const translations = {
     projects_subtitle: 'Selected engineering work',
     projects_view: 'View details',
     projects_current: 'Currently working on',
+    projects_completed: 'Completed projects',
 
     contact_title: 'Contact',
     contact_subtitle: "Let's build something together",
@@ -55,6 +56,7 @@ export const translations = {
     projects_subtitle: 'Vybrané inženýrské práce',
     projects_view: 'Zobrazit detaily',
     projects_current: 'Aktuálně na tom pracuji',
+    projects_completed: 'Dokončené projekty',
 
     contact_title: 'Kontakt',
     contact_subtitle: 'Pojďme tvořit společně',

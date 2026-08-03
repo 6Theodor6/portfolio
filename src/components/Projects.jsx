@@ -9,7 +9,11 @@ export default function Projects() {
   const projects = data[lang].projects
   const [open, setOpen] = useState(null)
 
-  const active = open !== null ? projects[open] : null
+  const current = projects.filter((p) => p.status === 'current')
+  const completed = projects.filter((p) => p.status !== 'current')
+  const ordered = [...current, ...completed]
+
+  const active = open !== null ? ordered[open] : null
 
   useEffect(() => {
     if (open === null) return
@@ -28,39 +32,52 @@ export default function Projects() {
         <Reveal>
           <SectionHeader eyebrow="04" title={t('projects_title')} subtitle={t('projects_subtitle')} />
         </Reveal>
-        <div className="grid gap-6 md:grid-cols-2">
-          {projects.map((p, i) => (
-            <Reveal key={p.title}>
-              <div className="flex h-full flex-col overflow-hidden rounded-xl border border-slate-800 bg-slate-900/50">
-                <div className="flex items-start gap-4 p-6 pb-4">
-                  <div>
-                    <div className="mb-3 flex flex-wrap items-center gap-2">
-                      <span className="inline-block rounded-full bg-emerald-500/10 px-3 py-1 font-mono text-xs text-emerald-400">
-                        {p.tag}
-                      </span>
-                      {p.status === 'current' && (
-                        <span className="inline-block rounded-full bg-amber-500/15 px-3 py-1 font-mono text-xs text-amber-400">
-                          {t('projects_current')}
-                        </span>
-                      )}
-                    </div>
-                    <h3 className="text-lg font-semibold text-slate-100">{p.title}</h3>
-                  </div>
-                </div>
 
-                <p className="px-6 pb-4 text-sm text-slate-400">{p.summary}</p>
-
-                <button
-                  onClick={() => setOpen(i)}
-                  className="mt-auto flex items-center justify-between border-t border-slate-800 px-6 py-3 text-sm font-medium text-emerald-400 transition hover:bg-emerald-500/5"
-                >
-                  {t('projects_view')}
-                  <span>▸</span>
-                </button>
-              </div>
+        {current.length > 0 && (
+          <>
+            <Reveal>
+              <h3 className="mb-4 flex items-center gap-3 font-mono text-sm uppercase tracking-wide text-amber-400">
+                <span className="h-px w-6 bg-amber-400/50" />
+                {t('projects_current')}
+              </h3>
             </Reveal>
-          ))}
-        </div>
+            <div className="mb-12 grid gap-6 md:grid-cols-2">
+              {current.map((p, ci) => (
+                <ProjectCard
+                  key={p.title}
+                  p={p}
+                  index={ci}
+                  open={open}
+                  setOpen={setOpen}
+                  t={t}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
+        {completed.length > 0 && (
+          <>
+            <Reveal>
+              <h3 className="mb-4 flex items-center gap-3 font-mono text-sm uppercase tracking-wide text-slate-500">
+                <span className="h-px w-6 bg-slate-600/50" />
+                {t('projects_completed')}
+              </h3>
+            </Reveal>
+            <div className="grid gap-6 md:grid-cols-2">
+              {completed.map((p, ci) => (
+                <ProjectCard
+                  key={p.title}
+                  p={p}
+                  index={current.length + ci}
+                  open={open}
+                  setOpen={setOpen}
+                  t={t}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
       {active && (
@@ -142,5 +159,39 @@ export default function Projects() {
         </div>
       )}
     </section>
+  )
+}
+
+function ProjectCard({ p, index, open, setOpen, t }) {
+  return (
+    <Reveal>
+      <div className="flex h-full flex-col overflow-hidden rounded-xl border border-slate-800 bg-slate-900/50">
+        <div className="flex items-start gap-4 p-6 pb-4">
+          <div>
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              <span className="inline-block rounded-full bg-emerald-500/10 px-3 py-1 font-mono text-xs text-emerald-400">
+                {p.tag}
+              </span>
+              {p.status === 'current' && (
+                <span className="inline-block rounded-full bg-amber-500/15 px-3 py-1 font-mono text-xs text-amber-400">
+                  {t('projects_current')}
+                </span>
+              )}
+            </div>
+            <h3 className="text-lg font-semibold text-slate-100">{p.title}</h3>
+          </div>
+        </div>
+
+        <p className="px-6 pb-4 text-sm text-slate-400">{p.summary}</p>
+
+        <button
+          onClick={() => setOpen(index)}
+          className="mt-auto flex items-center justify-between border-t border-slate-800 px-6 py-3 text-sm font-medium text-emerald-400 transition hover:bg-emerald-500/5"
+        >
+          {t('projects_view')}
+          <span>▸</span>
+        </button>
+      </div>
+    </Reveal>
   )
 }
