@@ -145,7 +145,9 @@ export const data = {
           'Real-time wireless data streaming via ESP-NOW to a remote computer in Unity',
         ],
         media: [
+          { type: 'image', src: '/media/glove_insides.jpeg', caption: 'Glove insides' },
           { type: 'video', src: '/media/sensoricGlove.MOV', caption: 'Sensory glove demo' },
+          { type: 'video', src: '/media/glove_p1.MOV', caption: 'Glove demo 2' },
         ],
       },
       {
@@ -391,7 +393,9 @@ export const data = {
           'Real-time stream přes ESP-NOW do Unity',
         ],
         media: [
+          { type: 'image', src: '/media/glove_insides.jpeg', caption: 'Vnitřek rukavice' },
           { type: 'video', src: '/media/sensoricGlove.MOV', caption: 'Demo senzorické rukavice' },
+          { type: 'video', src: '/media/glove_p1.MOV', caption: 'Rukavice - druhá ukázka' },
         ],
       },
       {
