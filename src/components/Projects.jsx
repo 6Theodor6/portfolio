@@ -11,9 +11,8 @@ export default function Projects() {
 
   const current = projects.filter((p) => p.status === 'current')
   const completed = projects.filter((p) => p.status !== 'current')
-  const ordered = [...current, ...completed]
 
-  const active = open !== null ? ordered[open] : null
+  const active = open !== null ? projects.find((p) => p.title === open) : null
 
   useEffect(() => {
     if (open === null) return
@@ -42,11 +41,10 @@ export default function Projects() {
               </h3>
             </Reveal>
             <div className="mb-12 grid gap-6 md:grid-cols-2">
-              {completed.map((p, ci) => (
+              {completed.map((p) => (
                 <ProjectCard
                   key={p.title}
                   p={p}
-                  index={ci}
                   open={open}
                   setOpen={setOpen}
                   t={t}
@@ -65,11 +63,10 @@ export default function Projects() {
               </h3>
             </Reveal>
             <div className="grid gap-6 md:grid-cols-2">
-              {current.map((p, ci) => (
+              {current.map((p) => (
                 <ProjectCard
                   key={p.title}
                   p={p}
-                  index={completed.length + ci}
                   open={open}
                   setOpen={setOpen}
                   t={t}
@@ -162,7 +159,7 @@ export default function Projects() {
   )
 }
 
-function ProjectCard({ p, index, open, setOpen, t }) {
+function ProjectCard({ p, open, setOpen, t }) {
   return (
     <Reveal>
       <div className="flex h-full flex-col overflow-hidden rounded-xl border border-slate-800 bg-slate-900/50">
@@ -185,7 +182,7 @@ function ProjectCard({ p, index, open, setOpen, t }) {
         <p className="px-6 pb-4 text-sm text-slate-400">{p.summary}</p>
 
         <button
-          onClick={() => setOpen(index)}
+          onClick={() => setOpen(p.title)}
           className="mt-auto flex items-center justify-between border-t border-slate-800 px-6 py-3 text-sm font-medium text-emerald-400 transition hover:bg-emerald-500/5"
         >
           {t('projects_view')}
