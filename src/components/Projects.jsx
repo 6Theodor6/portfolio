@@ -106,7 +106,7 @@ export default function Projects() {
                           controls
                           preload="metadata"
                           playsInline
-                          className="h-56 w-full rounded-lg border border-slate-800 bg-black object-cover md:h-64"
+                          className="h-56 w-full rounded-lg border border-slate-800 bg-black object-contain md:h-64"
                         />
                         {m.caption && (
                           <p className="mt-1.5 text-xs text-slate-500">{m.caption}</p>
