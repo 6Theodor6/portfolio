@@ -46,25 +46,29 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-wrap items-center gap-3">
-          <span className="font-mono text-xs uppercase tracking-wider text-slate-500">SW</span>
-          {['Embedded', 'Programming', 'AI Agents', 'LLM Workflows'].map((s) => (
-            <span
-              key={s}
-              className="rounded-full border border-slate-800 bg-slate-900 px-4 py-1.5 font-mono text-xs text-slate-400"
-            >
-              {s}
-            </span>
-          ))}
-          <span className="ml-4 font-mono text-xs uppercase tracking-wider text-slate-500">HW</span>
-          {['KiCad', 'ESP32', 'PCB Design', 'Sensors', 'Fusion 360'].map((s) => (
-            <span
-              key={s}
-              className="rounded-full border border-slate-800 bg-slate-900 px-4 py-1.5 font-mono text-xs text-slate-400"
-            >
-              {s}
-            </span>
-          ))}
+        <div className="mt-16 space-y-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="font-mono text-xs uppercase tracking-wider text-slate-500">HW</span>
+            {['KiCad', 'ESP32', 'PCB Design', 'Sensors', 'Fusion 360'].map((s) => (
+              <span
+                key={s}
+                className="rounded-full border border-slate-800 bg-slate-900 px-4 py-1.5 font-mono text-xs text-slate-400"
+              >
+                {s}
+              </span>
+            ))}
+          </div>
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="font-mono text-xs uppercase tracking-wider text-slate-500">SW</span>
+            {['Embedded', 'Programming', 'AI Agents', 'LLM Workflows'].map((s) => (
+              <span
+                key={s}
+                className="rounded-full border border-slate-800 bg-slate-900 px-4 py-1.5 font-mono text-xs text-slate-400"
+              >
+                {s}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 
