@@ -52,6 +52,16 @@ export const data = {
           'Rapid prototyping',
         ],
       },
+      {
+        name: 'AI & Developer Tooling',
+        icon: 'ai',
+        items: [
+          'AI-assisted development & LLM workflows',
+          'Agentic coding & AI agents (OpenCode)',
+          'LLM automation, scripting & prototyping',
+          'Prompt engineering, LLM integration concepts (AI Engineering)',
+        ],
+      },
     ],
 
     education: [
@@ -299,6 +309,16 @@ export const data = {
           'Blender (3D rendering)',
           '3D tisk (FDM, TPU, PLA)',
           'Rapid prototyping',
+        ],
+      },
+      {
+        name: 'AI a vývojářské nástroje',
+        icon: 'ai',
+        items: [
+          'AI-asistovaný vývoj a LLM workflow',
+          'Agentní kódování a AI agenti (OpenCode)',
+          'LLM automatizace, skriptování a prototypování',
+          'Prompt engineering, integrace LLM (AI Engineering)',
         ],
       },
     ],

@@ -81,6 +81,13 @@ function SkillIcon({ name }) {
           <path d="M3 13l9 5 9-5M3 17l9 5 9-5" />
         </svg>
       )
+    case 'ai':
+      return (
+        <svg viewBox="0 0 24 24" {...common} className="h-5 w-5">
+          <path d="M12 3a3 3 0 0 1 3 3v2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4v2a3 3 0 0 1-6 0v-2H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4V6a3 3 0 0 1 3-3z" />
+          <circle cx="12" cy="12" r="1.6" />
+        </svg>
+      )
     default:
       return null
   }
