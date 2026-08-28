@@ -7,7 +7,7 @@ export const data = {
       email: 'theodor.mounga@gmail.com',
       youtube: 'https://www.youtube.com/@Artificerofalltrades',
       summary:
-        'Mechatronics engineer with 3 years of commercial R&D experience spanning embedded hardware and firmware development. Hands-on with complete multi-layer PCB design — from precision analog to high-speed DDR3L memory — supply-chain management (DFM/DFA), board bring-up in the lab and rapid prototyping. Looking for a Hardware / Embedded Engineer position in an international R&D centre.',
+        'I enjoy solving engineering challenges end-to-end. I work across hardware and embedded design, including multi-layer PCB layout (4–6 layers), right through to the software itself, spanning multiple technical disciplines. I have experience with various communication protocols and sensors, as well as sensor fusion — for example combining an accelerometer and a gyroscope. I have three years of commercial R&D experience at UJP PRAHA a.s. I mostly work on projects independently — from reading datasheets and selecting components, through schematic and PCB design, to embedded software implementation, testing and debugging — and I can research the information I need on my own; usually a well-defined brief is all I need.',
     },
 
     skills: [
@@ -266,7 +266,7 @@ export const data = {
       email: 'theodor.mounga@gmail.com',
       youtube: 'https://www.youtube.com/@Artificerofalltrades',
       summary:
-        'Inženýr mechatroniky se 3 lety komerční praxe v R&D a silným přesahem do vývoje vestavěného hardwaru i firmwaru. Mám praktické zkušenosti s kompletním návrhem vícevrstvých plošných spojů (od precizního analogu po high-speed DDR3L paměti), řízením dodavatelského řetězce (DFM/DFA), oživováním desek v laboratoři a rapid prototypingem. Hledám pozici Hardware / Embedded Engineer v mezinárodním R&D centru.',
+        'Baví mě řešit inženýrské výzvy od začátku až do konce. Věnuji se jak HW a embedded designu včetně návrhu PCB (4–6 vrstev), tak samotnému SW, s přesahem do více technických disciplín. Mám zkušenosti s různými komunikačními protokoly i senzory a jejich kombinací (fúze), např. akcelerometru a gyroskopu. Tři roky komerčního R&D ve firmě UJP PRAHA a.s. Na projektech pracuji převážně samostatně — od práce s datasheety a výběrem komponent přes návrh schématu a PCB až po implementaci embedded SW a testování či debugování, a dokážu si potřebné informace samostatně nastudovat; obvykle mi stačí dobře definované zadání.',
     },
 
     skills: [
