@@ -1,4 +1,5 @@
 import { LanguageProvider } from './i18n'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
@@ -22,6 +23,7 @@ function App() {
           <Contact />
         </main>
         <Footer />
+        <Analytics />
       </div>
     </LanguageProvider>
   )
