@@ -218,16 +218,17 @@ export const data = {
       {
         title: 'LIDAR',
         tag: 'Analog',
-        status: 'current',
         period: '2023 – 2025',
         summary:
-          'Modular LIDAR development for distance sensing, currently in progress.',
+          'Modular LIDAR development for distance sensing.',
         details: [
           'Modular LIDAR development',
           'Precision analog design',
         ],
         media: [
           { type: 'video', src: '/media/LIDAR.mov', caption: 'LIDAR demo' },
+          { type: 'video', src: '/media/LiDAR_SCANNER2.mov', caption: 'LIDAR scanner' },
+          { type: 'video', src: '/media/LiDARinBOX.MOV', caption: 'LIDAR in box' },
         ],
       },
       {
@@ -475,16 +476,17 @@ export const data = {
       {
         title: 'LiDAR',
         tag: 'Analog',
-        status: 'current',
         period: '2023 – 2025',
         summary:
-          'Vývoj modulárního LiDARu pro měření vzdálenosti, aktuálně ve vývoji.',
+          'Vývoj modulárního LiDARu pro měření vzdálenosti.',
         details: [
           'Vývoj modulárního LiDARu',
           'Precizní analogový návrh',
         ],
         media: [
           { type: 'video', src: '/media/LIDAR.mov', caption: 'Demo LiDARu' },
+          { type: 'video', src: '/media/LiDAR_SCANNER2.mov', caption: 'Skener LiDARu' },
+          { type: 'video', src: '/media/LiDARinBOX.MOV', caption: 'LiDAR v krabici' },
         ],
       },
       {
