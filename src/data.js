@@ -227,9 +227,9 @@ export const data = {
           'Precision analog design',
         ],
         media: [
-          { type: 'video', src: '/media/LIDAR_DEMO.mp4', caption: 'LIDAR demo' },
+          { type: 'video', src: '/media/LiDAR_DEMO.mp4', caption: 'LIDAR demo' },
           { type: 'video', src: '/media/LiDAR_SCANNER2.mp4', caption: 'LIDAR scanner' },
-          { type: 'video', src: '/media/LiDARinTheBOX2.mp4', caption: 'LiDAR in the box' },
+          { type: 'video', src: '/media/LIDARinTheBOX2.mp4', caption: 'LiDAR in the box' },
         ],
       },
       {
@@ -486,9 +486,9 @@ export const data = {
           'Precizní analogový návrh',
         ],
         media: [
-          { type: 'video', src: '/media/LIDAR_DEMO.mp4', caption: 'Demo LiDARu' },
+          { type: 'video', src: '/media/LiDAR_DEMO.mp4', caption: 'Demo LiDARu' },
           { type: 'video', src: '/media/LiDAR_SCANNER2.mp4', caption: 'Skener LiDARu' },
-          { type: 'video', src: '/media/LiDARinTheBOX2.mp4', caption: 'LiDAR v krabici' },
+          { type: 'video', src: '/media/LIDARinTheBOX2.mp4', caption: 'LiDAR v krabici' },
         ],
       },
       {
