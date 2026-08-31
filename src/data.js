@@ -156,8 +156,8 @@ export const data = {
         ],
         media: [
           { type: 'image', src: '/media/glove_insides.jpeg', caption: 'Glove insides' },
-          { type: 'video', src: '/media/sensoricGlove.MOV', caption: 'Sensory glove demo' },
-          { type: 'video', src: '/media/glove_p1.MOV', caption: 'Glove demo 2' },
+          { type: 'video', src: '/media/sensoricGlove.mp4', caption: 'Sensory glove demo' },
+          { type: 'video', src: '/media/glove_p1.mp4', caption: 'Glove demo 2' },
         ],
       },
       {
@@ -227,9 +227,9 @@ export const data = {
           'Precision analog design',
         ],
         media: [
-          { type: 'video', src: '/media/LIDAR.mp4', caption: 'LIDAR demo' },
+          { type: 'video', src: '/media/LIDAR_DEMO.mp4', caption: 'LIDAR demo' },
           { type: 'video', src: '/media/LiDAR_SCANNER2.mp4', caption: 'LIDAR scanner' },
-          { type: 'video', src: '/media/LiDARinBOX.mp4', caption: 'LIDAR in box' },
+          { type: 'video', src: '/media/LiDARinTheBOX2.mp4', caption: 'LiDAR in the box' },
         ],
       },
       {
@@ -246,8 +246,8 @@ export const data = {
           'Colour-following with servo motors via OpenCV',
         ],
         media: [
-          { type: 'video', src: '/media/RaspberryPi_robot.mov', caption: 'Raspberry Pi robot demo' },
-          { type: 'video', src: '/media/RaspberryPi_robot_2.mov', caption: 'Raspberry Pi robot follow-up' },
+          { type: 'video', src: '/media/RaspberryPi_robot.mp4', caption: 'Raspberry Pi robot demo' },
+          { type: 'video', src: '/media/RaspberryPi_robot_2.mp4', caption: 'Raspberry Pi robot follow-up' },
         ],
       },
     ],
@@ -416,8 +416,8 @@ export const data = {
         ],
         media: [
           { type: 'image', src: '/media/glove_insides.jpeg', caption: 'Vnitřek rukavice' },
-          { type: 'video', src: '/media/sensoricGlove.MOV', caption: 'Demo senzorické rukavice' },
-          { type: 'video', src: '/media/glove_p1.MOV', caption: 'Rukavice - druhá ukázka' },
+          { type: 'video', src: '/media/sensoricGlove.mp4', caption: 'Demo senzorické rukavice' },
+          { type: 'video', src: '/media/glove_p1.mp4', caption: 'Rukavice - druhá ukázka' },
         ],
       },
       {
@@ -486,9 +486,9 @@ export const data = {
           'Precizní analogový návrh',
         ],
         media: [
-          { type: 'video', src: '/media/LIDAR.mp4', caption: 'Demo LiDARu' },
+          { type: 'video', src: '/media/LIDAR_DEMO.mp4', caption: 'Demo LiDARu' },
           { type: 'video', src: '/media/LiDAR_SCANNER2.mp4', caption: 'Skener LiDARu' },
-          { type: 'video', src: '/media/LiDARinBOX.mp4', caption: 'LiDAR v krabici' },
+          { type: 'video', src: '/media/LiDARinTheBOX2.mp4', caption: 'LiDAR v krabici' },
         ],
       },
       {
@@ -505,8 +505,8 @@ export const data = {
           'Sledování barevných objektů servomotory přes OpenCV',
         ],
         media: [
-          { type: 'video', src: '/media/RaspberryPi_robot.mov', caption: 'Demo robota Raspberry Pi' },
-          { type: 'video', src: '/media/RaspberryPi_robot_2.mov', caption: 'Raspberry Pi robot - druhá ukázka' },
+          { type: 'video', src: '/media/RaspberryPi_robot.mp4', caption: 'Demo robota Raspberry Pi' },
+          { type: 'video', src: '/media/RaspberryPi_robot_2.mp4', caption: 'Raspberry Pi robot - druhá ukázka' },
         ],
       },
     ],
