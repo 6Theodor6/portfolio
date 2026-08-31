@@ -218,6 +218,7 @@ export const data = {
       {
         title: 'LIDAR',
         tag: 'Analog',
+        tags: ['Analog', 'Python', 'C++'],
         period: '2023 – 2025',
         summary:
           'Modular LIDAR development for distance sensing.',
@@ -226,9 +227,9 @@ export const data = {
           'Precision analog design',
         ],
         media: [
-          { type: 'video', src: '/media/LIDAR.mov', caption: 'LIDAR demo' },
-          { type: 'video', src: '/media/LiDAR_SCANNER2.mov', caption: 'LIDAR scanner' },
-          { type: 'video', src: '/media/LiDARinBOX.MOV', caption: 'LIDAR in box' },
+          { type: 'video', src: '/media/LIDAR.mp4', caption: 'LIDAR demo' },
+          { type: 'video', src: '/media/LiDAR_SCANNER2.mp4', caption: 'LIDAR scanner' },
+          { type: 'video', src: '/media/LiDARinBOX.mp4', caption: 'LIDAR in box' },
         ],
       },
       {
@@ -476,6 +477,7 @@ export const data = {
       {
         title: 'LiDAR',
         tag: 'Analog',
+        tags: ['Analog', 'Python', 'C++'],
         period: '2023 – 2025',
         summary:
           'Vývoj modulárního LiDARu pro měření vzdálenosti.',
@@ -484,9 +486,9 @@ export const data = {
           'Precizní analogový návrh',
         ],
         media: [
-          { type: 'video', src: '/media/LIDAR.mov', caption: 'Demo LiDARu' },
-          { type: 'video', src: '/media/LiDAR_SCANNER2.mov', caption: 'Skener LiDARu' },
-          { type: 'video', src: '/media/LiDARinBOX.MOV', caption: 'LiDAR v krabici' },
+          { type: 'video', src: '/media/LIDAR.mp4', caption: 'Demo LiDARu' },
+          { type: 'video', src: '/media/LiDAR_SCANNER2.mp4', caption: 'Skener LiDARu' },
+          { type: 'video', src: '/media/LiDARinBOX.mp4', caption: 'LiDAR v krabici' },
         ],
       },
       {

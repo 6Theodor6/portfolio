@@ -96,9 +96,14 @@ export default function Projects() {
 
             <div className="p-6 pb-4">
               <div className="mb-3 flex flex-wrap items-center gap-2 pr-10">
-                <span className="inline-block rounded-full bg-emerald-500/10 px-3 py-1 font-mono text-xs text-emerald-400">
-                  {active.tag}
-                </span>
+                {(active.tags ?? (active.tag ? [active.tag] : [])).map((tg) => (
+                  <span
+                    key={tg}
+                    className="inline-block rounded-full bg-emerald-500/10 px-3 py-1 font-mono text-xs text-emerald-400"
+                  >
+                    {tg}
+                  </span>
+                ))}
                 {active.status === 'current' && (
                   <span className="inline-block rounded-full bg-amber-500/15 px-3 py-1 font-mono text-xs text-amber-400">
                     {t('projects_current')}
@@ -166,9 +171,14 @@ function ProjectCard({ p, open, setOpen, t }) {
         <div className="flex items-start gap-4 p-6 pb-4">
           <div>
             <div className="mb-3 flex flex-wrap items-center gap-2">
-              <span className="inline-block rounded-full bg-emerald-500/10 px-3 py-1 font-mono text-xs text-emerald-400">
-                {p.tag}
-              </span>
+              {(p.tags ?? (p.tag ? [p.tag] : [])).map((tg) => (
+                <span
+                  key={tg}
+                  className="inline-block rounded-full bg-emerald-500/10 px-3 py-1 font-mono text-xs text-emerald-400"
+                >
+                  {tg}
+                </span>
+              ))}
               {p.status === 'current' && (
                 <span className="inline-block rounded-full bg-amber-500/15 px-3 py-1 font-mono text-xs text-amber-400">
                   {t('projects_current')}
