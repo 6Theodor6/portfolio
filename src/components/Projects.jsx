@@ -122,6 +122,7 @@ export default function Projects() {
                       <div key={mi}>
                         <video
                           src={m.src}
+                          poster={m.src.replace(/\.[^./]+$/, '-poster.jpg')}
                           controls
                           preload="metadata"
                           playsInline
