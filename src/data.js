@@ -237,7 +237,7 @@ export const data = {
         tag: 'Robotics',
         period: '2019 – 2020',
         summary:
-          'Raspberry Pi robot built in high school, controlled wirelessly via Bluetooth from a custom Android app, that follows objects of a specific colour using servos and OpenCV.',
+          'OpenCV robot – computer vision, embedded/robotics integration and software-hardware interaction.',
         details: [
           'Designed and built a 4-wheel chassis',
           'Object tracking with camera via OpenCV (C++/Python)',
