@@ -153,6 +153,7 @@ export const data = {
           'Experiments with flexible PCB (Flex-PCB) and sensor characterization (piezo, Velostat, Hall sensors) on a custom test station',
           'Body designed in Fusion 360, FDM printed from PLA and TPU',
           'Real-time wireless data streaming via ESP-NOW to a remote computer in Unity',
+          'Implemented sensor fusion using a Kalman filter on the accelerometer and gyroscope to estimate orientation',
         ],
         media: [
           { type: 'image', src: '/media/glove_insides.jpeg', caption: 'Glove insides' },
@@ -413,6 +414,7 @@ export const data = {
           'Experimenty s Flex-PCB a senzory (piezo, Velostat, Hall) na test. stanici',
           'Tělo ve Fusion 360, 3D tisk (PLA, TPU)',
           'Real-time stream přes ESP-NOW do Unity',
+          'Implementace senzorické fúze přes Kalmanův filtr na akcelerometru a gyroskopu pro odhad orientace',
         ],
         media: [
           { type: 'image', src: '/media/glove_insides.jpeg', caption: 'Vnitřek rukavice' },
