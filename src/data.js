@@ -253,6 +253,7 @@ export const data = {
       },
       {
         title: 'SellIt — Online Bazaar',
+        category: 'sw',
         tags: ['Web App', 'Full Stack', 'AI-Assisted', 'Agentic Workflow'],
         period: '2025',
         summary:
@@ -528,6 +529,7 @@ export const data = {
       },
       {
         title: 'SellIt — Online bazar',
+        category: 'sw',
         tags: ['Web app', 'Full Stack', 'AI-asistované', 'Agentní workflow'],
         period: '2025',
         summary:

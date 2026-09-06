@@ -24,6 +24,7 @@ export const translations = {
     projects_view: 'View details',
     projects_current: 'Currently working on',
     projects_completed: 'Completed projects',
+    projects_software: 'SW Project',
     projects_visit: 'Visit live app',
 
     contact_title: 'Contact',
@@ -58,6 +59,7 @@ export const translations = {
     projects_view: 'Zobrazit detaily',
     projects_current: 'Aktuálně na tom pracuji',
     projects_completed: 'Dokončené projekty',
+    projects_software: 'SW projekt',
     projects_visit: 'Navštívit aplikaci',
 
     contact_title: 'Kontakt',

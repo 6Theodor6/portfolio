@@ -10,7 +10,8 @@ export default function Projects() {
   const [open, setOpen] = useState(null)
 
   const current = projects.filter((p) => p.status === 'current')
-  const completed = projects.filter((p) => p.status !== 'current')
+  const completed = projects.filter((p) => p.status !== 'current' && p.category !== 'sw')
+  const software = projects.filter((p) => p.category === 'sw')
 
   const active = open !== null ? projects.find((p) => p.title === open) : null
 
@@ -42,6 +43,28 @@ export default function Projects() {
             </Reveal>
             <div className="mb-12 grid gap-6 md:grid-cols-2">
               {completed.map((p) => (
+                <ProjectCard
+                  key={p.title}
+                  p={p}
+                  open={open}
+                  setOpen={setOpen}
+                  t={t}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
+        {software.length > 0 && (
+          <>
+            <Reveal>
+              <h3 className="mb-4 flex items-center gap-3 font-mono text-sm uppercase tracking-wide text-emerald-400">
+                <span className="h-px w-6 bg-emerald-400/50" />
+                {t('projects_software')}
+              </h3>
+            </Reveal>
+            <div className="mb-12 grid gap-6 md:grid-cols-2">
+              {software.map((p) => (
                 <ProjectCard
                   key={p.title}
                   p={p}
