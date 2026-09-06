@@ -251,6 +251,21 @@ export const data = {
           { type: 'video', src: '/media/RaspberryPi_robot_2.mp4', caption: 'Raspberry Pi robot follow-up' },
         ],
       },
+      {
+        title: 'SellIt — Online Bazaar',
+        tags: ['Web App', 'Full Stack', 'AI-Assisted', 'Agentic Workflow'],
+        period: '2025',
+        summary:
+          'Full-stack marketplace web application where users can list, browse and search items for sale, delivered end-to-end with an agentic development workflow.',
+        link: 'https://sellit-amber.vercel.app',
+        details: [
+          'Full-stack application: frontend, backend and database, deployed to production',
+          'Developed end-to-end using an agentic workflow with AI-assisted development',
+          'AI agents used for rapid prototyping, code generation, debugging and iterative refinement',
+          'Marketplace features: item listing, browsing, searching and item details',
+          'Responsive UI deployed live at sellit-amber.vercel.app',
+        ],
+      },
     ],
 
     contact: {
@@ -509,6 +524,21 @@ export const data = {
         media: [
           { type: 'video', src: '/media/RaspberryPi_robot.mp4', caption: 'Demo robota Raspberry Pi' },
           { type: 'video', src: '/media/RaspberryPi_robot_2.mp4', caption: 'Raspberry Pi robot - druhá ukázka' },
+        ],
+      },
+      {
+        title: 'SellIt — Online bazar',
+        tags: ['Web app', 'Full Stack', 'AI-asistované', 'Agentní workflow'],
+        period: '2025',
+        summary:
+          'Full-stack bazarová webová aplikace, kde uživatelé vystavují, prohlížejí a vyhledávají inzeráty, postavená end-to-end s použitím agentního vývojového workflow.',
+        link: 'https://sellit-amber.vercel.app',
+        details: [
+          'Full-stack aplikace: frontend, backend a databáze, nasazeno do produkce',
+          'Vyvíjeno end-to-end pomocí agentního workflow s AI-asistovaným vývojem',
+          'AI agenti pro rychlé prototypování, generování kódu, debugging a iterativní vylepšování',
+          'Marketplace funkce: vystavování inzerátů, prohlížení, vyhledávání a detail inzerátu',
+          'Responzivní UI, živě nasazeno na sellit-amber.vercel.app',
         ],
       },
     ],

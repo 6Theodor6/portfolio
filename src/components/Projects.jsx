@@ -157,6 +157,20 @@ export default function Projects() {
                   </li>
                 ))}
               </ul>
+              {active.link && (
+                <a
+                  href={active.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-5 inline-flex items-center gap-2 rounded-md bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+                >
+                  {t('projects_visit')}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <path d="M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </a>
+              )}
             </div>
           </div>
         </div>
